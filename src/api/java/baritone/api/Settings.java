@@ -1559,8 +1559,10 @@ public final class Settings {
 
     /**
      * Allow the pathfinder to fly above y 128 in the nether.
+     * <p>
+     * Without this, elytra refuses to start when you or your goal are on top of the nether roof.
      */
-    public final Setting<Boolean> elytraAllowAboveRoof = new Setting<>(false);
+    public final Setting<Boolean> elytraAllowAboveRoof = new Setting<>(true);
 
     /**
      * Allow the pathfinder to access the baritone cache to improve pathing
